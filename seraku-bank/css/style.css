@@ -1,0 +1,333 @@
+a{
+  border: none;
+  outline: none;
+}
+
+body{
+  width: 1000px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+header{
+  width:1000px;
+}
+
+.headermenu{
+  display:inline-block;
+}
+
+.code{
+  margin-left: 20px;
+}
+.moji{
+  margin-left: 20px;
+}
+.moji p{
+  margin:0;
+  font-size:10px;
+}
+
+#mojisize{
+  text-align: center;
+}
+
+.search{
+  margin-left: 20px;
+  position: relative;
+}
+
+.search ul{
+  list-style-type: none;
+  margin-top:0;
+}
+
+.search li{
+  float:left;
+}
+
+.search li+li{
+  border-left:1px solid;
+  border-color:gray;
+  margin-right:3px;
+  margin-left:5px;
+  padding-left: 5px;
+}
+
+.search dl{
+  margin:0;
+}
+.search dt{
+  padding:19px;
+}
+
+.search dt input{
+  border:solid 4px midnightblue;
+  border-collapse: collapse;
+}
+
+.search dd{
+  position:absolute;
+  right:0;
+  top:33px;
+}
+
+nav{
+  height:40px;
+  position:relative;
+  overflow:hidden;
+  margin-bottom:10px;
+}
+
+nav a{
+  position:absolute;
+  display: inline-block;
+  height:40px;
+}
+
+nav a:hover{
+  position:absolute;
+  display: inline-block;
+  top:-40px;
+}
+
+/* MAIN */
+#main{
+  float:left;
+}
+
+.countainer{
+  width:650px;
+  overflow:hidden;
+  margin-right:50px;
+  margin-left:25px;
+  background-color:midnightblue;
+}
+
+#main .countainer .thum{
+  margin:5px 0px 5px 0px;
+}
+
+#main .countainer .thum div{
+  float:left;
+  margin-left: 10px;
+}
+
+#main #kojin{
+  width:700px;
+  margin-top:20px;
+  border-style:solid;
+  border-color:midnightblue;
+  border-radius: 0px 0px 5px 5px/ 0px 0px 5px 5px;
+  padding-top:8px;
+  padding-bottom: 15px;
+  padding-left:30px;
+  table-layout: fixed;
+}
+
+#kojin caption{
+  background-color: midnightblue;
+  color:ghostwhite;
+  font-weight:bold;
+  border-radius: 5px 5px 0px 0px / 5px 5px 0px 0px;
+  text-align: left;
+}
+#kojin tr:{
+    width:700px;
+}
+
+#main #houjin{
+  width:700px;
+  margin-top:20px;
+  border-style:solid;
+  border-color:midnightblue;
+  border-radius: 0px 0px 5px 5px/ 0px 0px 5px 5px;
+  padding-top:8px;
+  padding-bottom: 15px;
+  padding-left:30px;
+  table-layout: fixed;
+}
+
+#houjin caption{
+  background-color: midnightblue;
+  color:ghostwhite;
+  font-weight:bold;
+  border-radius: 5px 5px 0px 0px / 5px 5px 0px 0px;
+  text-align: left;
+}
+
+#houjin tr:{
+    width:700px;
+}
+
+#main #toushika{
+  width:700px;
+  margin-top:20px;
+  border-style:solid;
+  border-color:midnightblue;
+  border-radius: 0px 0px 5px 5px/ 0px 0px 5px 5px;
+  padding-top:8px;
+  padding-bottom: 15px;
+  padding-left:30px;
+  table-layout: fixed;
+}
+
+#toushika caption{
+  background-color: midnightblue;
+  color:ghostwhite;
+  font-weight:bold;
+  border-radius: 5px 5px 0px 0px / 5px 5px 0px 0px;
+  text-align: left;
+}
+
+#toushika tr:{
+    width:700px;
+}
+
+#main #saiyou{
+  width:700px;
+  margin-top:20px;
+  border-style:solid;
+  border-color:midnightblue;
+  border-radius: 0px 0px 5px 5px/ 0px 0px 5px 5px;
+  padding-top:8px;
+  padding-bottom: 15px;
+  padding-left:30px;
+  table-layout: fixed;
+}
+
+#saiyou caption{
+  background-color: midnightblue;
+  color:ghostwhite;
+  font-weight:bold;
+  border-radius: 5px 5px 0px 0px / 5px 5px 0px 0px;
+  text-align: left;
+}
+
+#saiyou tr:{
+    width:700px;
+}
+/* MAIN end */
+
+/*TAB */
+#tabs{
+  width:700px;
+  padding:0;
+}
+
+#tabs time{
+  white-space:nowrap;
+}
+
+#tabs tr{
+  vertical-align: top;
+}
+
+#tabs ul{
+  padding:0px;
+}
+#tabs ul li{
+  margin:0;
+  padding:0px;
+}
+
+#tabs ul li a{
+  padding:0;
+}
+/*TAB end*/
+
+/* SUB */
+#sub{
+  float:left;
+}
+#sub table#login{
+  width:230px;
+  padding-left: 5px;
+  padding-right:5px;
+  text-align: center;
+  border-style:solid;
+  border-collapse: collapse;
+  border-color:midnightblue;
+}
+
+#sub table#login p{
+  font-size:10px;
+}
+
+#sub table#login tr:first-child{
+  background-color: midnightblue;
+}
+
+#sub table#annai{
+  margin-top:15px;
+  width:230px;
+  text-align: center;
+  border-style:solid;
+  border-collapse: collapse;
+  border-color:midnightblue;
+}
+
+#sub table#annai tr:first-child{
+  background-color: midnightblue;
+  color:ghostwhite;
+  font-weight:bold;
+  font-size:18px;
+}
+
+#sub table#annai td div{
+  padding-top:8px;
+  padding-right:8px;
+  padding-left:8px;
+}
+
+.banner{
+  margin-top:10px;
+}
+/* SUB end */
+
+/*footer*/
+footer{
+  clear:both;
+  padding-top:50px;
+  background-image: url(../images/footer_bg.jpg);
+  background-position: center;
+}
+
+.footermenu{
+  list-style-type: circle;
+  color:white;
+  float:left;
+}
+
+.footermenu a{
+  color:white;
+}
+
+.footermenu li:first-child{
+  font-weight:bold;
+  list-style-type: none;
+}
+
+.bottommenu{
+  clear:both;
+  width:1000px;
+  background-color:white;
+  text-align:center;
+}
+
+.bottommenu a{
+  color:green;
+}
+
+.bottommenu p{
+  display:inline-block;
+  font-size:0.5em;
+}
+
+#copyright{
+  clear:left;
+  font-size:0.5em;
+  color:white;
+  text-align:center;
+}
+/*footer end*/

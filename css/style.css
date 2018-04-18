@@ -1,0 +1,397 @@
+html{
+  position:relative;
+  overflow-x: hidden;
+  font-size: 1.3rem;
+}
+canvas{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index: 2;
+  margin-right: auto;
+  margin-left: auto;
+}
+h2:first-of-type{
+  margin-top:150px;
+}
+h2:nth-child(n+2){
+  margin-top:400px;
+}
+body{
+  background-color: white;
+}
+li{
+  list-style-type: none;
+}
+#main{
+  width:70%;
+  margin-right:auto;
+  margin-left:auto;
+}
+@font-face{
+  font-family:Titillium-Thin;
+  src:url(../font/Titillium-Thin.otf);
+}
+/*メディアクエリ*/
+@media screen and (max-width:600px){
+  html{
+    font-size: 0.8rem;
+  }
+  h2:first-of-type{
+  margin-top:50px;
+}
+  h2:nth-child(n+2){
+  margin-top:100px;
+}
+}
+@media screen and (min-width:600px) and (max-width:960px){
+  html{
+    font-size: 1rem;
+  }
+  h2:first-of-type{
+  margin-top:90px;
+}
+  h2:nth-child(n+2){
+  margin-top:200px;
+}
+}
+@media screen and (max-width:1260px) and (min-width:960px){
+  h2:nth-child(n+2){
+  margin-top:250px;
+}
+}
+
+
+/*-------------------*/
+/*ヘッダー*/
+/*-------------------*/
+header{
+ /* background-image:url(../image/miyazakiDSCF5012_TP_V.jpg);*/
+  color:black;
+  height:500px;
+  border-bottom:solid 1px silver;
+  z-index: 2;
+  position: relative;
+}
+h1{
+  font-family:Titillium-Thin;
+  letter-spacing: 2rem;
+  text-align: center;
+  padding-top: 200px;
+  font-weight:bold;
+  color:white;
+}
+h1 span:first-child{
+  display: block;
+  width:100%;
+  border-bottom: solid 1px white;
+}
+h1 span:nth-child(2){
+  margin-left:450px;
+  letter-spacing: 1rem;
+  display: block;
+  font-size:0.5em;
+}
+header>div{
+  z-index: 3;
+}
+/*メディアクエリ*/
+@media screen and (max-width:400px){
+  header{
+    height:180px;
+  }
+  h1{
+    padding-top: 75px;
+    letter-spacing: 0.3rem;
+  }
+h1 span:nth-child(2){
+  margin-left:100px;
+  letter-spacing: 0.2rem;
+}
+}
+@media screen and (max-width:600px) and (min-width:401px){
+  header{
+    height:200px;
+  }
+  h1{
+    padding-top: 75px;
+    letter-spacing: 0.3rem;
+  }
+  h1 span:first-child{
+    margin-left:20px;
+}
+h1 span:nth-child(2){
+  margin-left:150px;
+  letter-spacing: 0.3rem;
+}
+}
+@media screen and (min-width:600px) and (max-width:960px){
+  header{
+    height:350px;
+  }
+    h1{
+    padding-top: 170px;
+    letter-spacing: 1rem;
+  }
+h1 span:nth-child(2){
+  margin-left:200px;
+  letter-spacing: 0.8rem;
+}
+}
+@media screen and (max-width:1260px) and (min-width:960px){
+  header{
+    height:400px;
+  }
+    h1{
+    padding-top: 170px;
+    letter-spacing: 1.6rem;
+  }
+  h1 span:first-child{
+    margin-left:50px;
+}
+h1 span:nth-child(2){
+  margin-left:250px;
+  letter-spacing: 0.8rem;
+}
+}
+@media screen and (max-width:1500px) and (min-width:1261px){
+  header{
+    height:400px;
+  }
+    h1{
+    padding-top: 170px;
+    letter-spacing: 1.3rem;
+  }
+h1 span:first-child{
+    margin-left:50px;
+}
+h1 span:nth-child(2){
+  margin-left:250px;
+  letter-spacing: 0.8rem;
+}
+}
+/*-------------------*/
+/*ナビメニュー*/
+/*-------------------*/
+header>div:first-child{
+ /* background-color: rgba(255,255,255,0.4);*/
+  height:100%;
+  position: relative;
+}
+nav{
+  position:absolute;
+  bottom:10px;
+  z-index:3;
+}
+ul{
+  margin:0;
+}
+.menu{
+  display: flex;
+}
+.button {
+  width:70px;
+  height:70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color:whitesmoke;
+}
+.button-top{
+  margin-top:5px;
+}
+.button-bottom{
+  margin-bottom:5px;
+}
+.button div{
+  height: 3px;
+  width:80%;
+  background-color: black;
+  color:whitesmoke;
+}
+.navContainer{
+  display: none;
+}
+.navbar{
+  display: flex;
+  justify-content: flex-start;
+  background-color:white;
+
+}
+.navbar a{
+  text-decoration: none;
+  color:black;
+  font-weight:bold;
+  font-size:1.3rem;
+}
+.navbar li+li{
+  margin-left:100px;
+}
+/*メディアクエリ*/
+@media screen and (max-width:600px){
+  .navbar a{
+  font-size:1rem;
+  }
+  .navbar li+li{
+  margin-left:40px;
+}
+  .button{
+  width:40px;
+  height:40px;
+  }
+}
+@media screen and (min-width:600px) and (max-width:960px){
+  .navbar a{
+  font-size:1.1rem;
+  }
+  .navbar li+li{
+  margin-left:50px;
+}
+  .button{
+  width:50px;
+  height:50px;
+  }
+}
+/*メニューボタンクリックの動き*/
+/*メニュー表示*/
+@keyframes button-top{
+  0%{transform: rotate(0)}
+  100%{transform: translateY(12px);
+       opacity: 0;}
+}
+@keyframes button-bottom{
+  0%{transform: rotate(0)}
+  100%{transform: translateY(-12px);
+       opacity: 0;}
+}
+/*メニュー非表示*/
+@keyframes button-top-back{
+  0%{transform: rotate(0);
+     margin-top:50%;
+     opacity: (0);
+     }
+  100%{transform: translateY(0);
+       opacity: 1;}
+}
+@keyframes button-bottom-back{
+  0%{transform: rotate(0);
+     margin-bottom:50%;
+     opacity: (0);
+  }
+  100%{transform: translateY(0);
+       opacity: 1;}
+}
+
+
+/*--------------------*/
+/*Work*/
+/*--------------------*/
+h3>span{
+  display: block;
+  height:30px;
+  width:30px;
+  border-left:solid 2px black;
+  border-bottom: solid 2px black;
+  float:left;
+  margin-left:10px;
+  margin-right:10px;
+}
+.workSite{
+  clear:both;
+  width:60%;
+  box-shadow: 10px 10px 6px -6px #777;
+  border:solid 1px lightgray;
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom:100px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0;
+  margin-top:80px;
+}
+.workSiteList img{
+  width:100%;
+  height:100%;
+}
+.workSiteList{
+  width:100%;
+  height:100%;
+}
+.workExplain{
+  display: block;
+  text-align: center;
+  margin-top:100px;
+  margin-bottom:auto;
+}
+.backButton{
+  position:fixed;
+  right:5%;
+  bottom:5%;
+  width:100px;
+  height:100px;
+  opacity: 0.85;
+}
+.backButton:hover{
+  opacity: 0.5;
+  cursor:pointer;
+}
+.backButton img{
+  width:100%;
+  height:100%;
+}
+/*メディアクエリ*/
+@media screen and (max-width:600px){
+  .workSite{
+  width:80%;
+  margin-bottom:30px;
+  margin-top:40px;
+  }
+  h3>span{
+  height:20px;
+  width:20px;
+  margin-right:5px;
+  }
+  .backButton{
+  bottom:3%;
+  width:30px;
+  height:30px;
+  opacity: 0.85;
+}
+}
+@media screen and (min-width:600px) and (max-width:960px){
+  .workSite{
+  width:70%;
+  margin-bottom:60px;
+  margin-top:50px;
+  }
+  h3>span{
+  height:22px;
+  width:22px;
+  margin-right:5px;
+  }
+  .backButton{
+  bottom:3%;
+  width:40px;
+  height:40px;
+  opacity: 0.85;
+}
+}
+@media screen and (max-width:1260px) and (min-width:960px){
+  .workSite{
+    width:50%;
+  }
+}
+
+/*--------------------*/
+/*フッター*/
+/*--------------------*/
+footer{
+  height:200px;
+  text-align: center;
+  border-top:solid 1px silver;
+}
+/*footer>div:first-child{
+  height:100%;
+  background-color:rgba(255,255,255,0.3);
+  color:whitesmoke;
+}*/

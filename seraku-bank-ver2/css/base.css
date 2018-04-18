@@ -1,0 +1,411 @@
+body{
+  width:1260px;
+  margin-right:auto;
+  margin-left:auto;
+   overflow-x: hidden;
+}
+
+/* header*/
+#logo{
+  margin-right:auto;
+}
+
+header{
+  width:100%;
+  display: flex;
+  align-items:baseline;
+  padding:0;
+}
+
+#code{
+  margin-right:20px;
+  white-space: nowrap;
+}
+
+#moji{
+  margin-right:20px;
+  white-space: nowrap;
+}
+
+#moji img{
+  margin-right:5px;
+}
+
+#moji img:first-child{
+  margin-left: 5px;
+}
+
+header ul{
+margin:0;
+}
+
+header li{
+  float:left;
+  list-style-type:none;
+  padding-right: 5px;
+}
+
+header li a{
+  text-decoration: none;
+}
+
+header li+li{
+  border-left:solid 1px black;
+  padding-left:5px;
+}
+
+header dl{
+  margin:0;
+}
+header dt{
+  clear:left;
+  white-space: nowrap;
+  text-align: right;
+}
+
+/*main*/
+#headmenu{
+  clear:left;
+  padding-top:1px;
+  padding-bottom: 1px;
+}
+
+#headmenu ul{
+  display:flex;
+  justify-content:space-around;
+  padding:0;
+}
+
+#headmenu li{
+  list-style-type:none;
+  color:white;
+  background-color: midnightblue;
+  width:250px;
+  text-align:center;
+  height:50px;
+}
+
+#headmenu li a{
+  display: block;
+  width:100%;
+  height:100%;
+  margin-top:15px;
+  color:white;
+  text-decoration: none;
+}
+
+/*スライド*/
+.thumb{
+  display:flex;
+  justify-content: flex-start;
+  margin-bottom:20px;
+}
+
+.thumb div{
+  padding:0;
+  list-style-type: none;
+  float:left;
+}
+
+/*テーブル*/
+li{
+  list-style-type: none;
+}
+
+#main{
+  float:right;
+  width:850px;
+}
+#main a{
+  text-decoration: none;
+}
+#main caption{
+  text-align: left;
+  border-left:solid 10px #00a968;
+  border-bottom: solid 1px #00a968;
+  padding-left:10px;
+}
+#main td{
+  width:200px;
+}
+#main li{
+  vertical-align: top;
+  margin-bottom:15px;
+}
+#kojin{
+  float:left;
+  width:410px;
+}
+#houjin{
+  float:right;
+  width:410px;
+}
+#kabunushi{
+  clear:both;
+  float:left;
+  width:410px;
+}
+#saiyo{
+  float:right;
+  width:410px;
+}
+#saiyo tr td:nth-child(2) ul:first-child{
+margin-bottom: 35px;
+  margin-top: 0;
+}
+
+/*タブ*/
+#tabs{
+  clear:both;
+  padding:0;
+  border: none;
+}
+
+#tabs ul{
+  padding:0;
+  display:flex;
+  justify-content: space-between;
+  border:none;
+}
+#tabs li{
+  margin:0;
+  width:25%;
+  height:40px;
+  text-align: center;
+}
+#tabs li a{
+  width:100%;
+  padding:0;
+  height:100%;
+  color:white;
+  padding-top:15px;
+  background-color: gray;
+}
+#tabs li:first-of-type a{
+  background-color: midnightblue;
+}
+#tabs li+li{
+  border-left:solid 1px white;
+}
+#tabs table{
+  border-collapse: separate;
+  border-spacing:20px;
+  padding: 0;
+}
+#tabs tr{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+#tabs td{
+  vertical-align: middle;
+  text-align: left;
+}
+#tabs td a{
+  text-decoration: underline;
+}
+
+#tabs tr td:nth-child(3){
+  width:600px;
+}
+
+.thumb-item:nth-of-type(2),.thumb-item:nth-of-type(3){
+  filter:brightness(0.3)
+}
+
+.notice{
+  display: block;
+  background-color: dodgerblue;
+  color:white;
+  text-align: center;
+}
+.news{
+  display: block;
+  background-color: crimson;
+  color:white;
+  text-align: center;
+}
+.campaign{
+  display: block;
+  background-color: orange;
+  color:white;
+  text-align: center;
+}
+
+/*SUB*/
+#sub{
+  float:left;
+  width:360px;
+  overflow: hidden;
+}
+#internet_banking{
+  text-align:center;
+}
+#internet_banking p:first-child{
+  font-size:1.7em;
+  font-weight:bold;
+  color:midnightblue;
+}
+
+#internet_banking div:nth-of-type(1){
+  background-color: midnightblue;
+  margin-bottom: 10px;
+  height:35px;
+  padding:0;
+}
+#internet_banking div:nth-of-type(1) a{
+  text-decoration: none;
+  color:white;
+  display: block;
+  height:100%;
+  width:100%;
+  padding:7px;
+}
+#internet_banking div:nth-of-type(2){
+  background-color:yellowgreen;
+  height:35px;
+  padding:0;
+}
+#internet_banking div:nth-of-type(2) a{
+  text-decoration: none;
+  color:white;
+  display: block;
+  height:100%;
+  width:100%;
+  padding:7px;
+}
+
+#service_guide p:first-child{
+  font-size:1.7em;
+  font-weight: bold;
+  color:midnightblue;
+  font-weight:bold;
+  text-align: center;
+  margin-bottom:5px;
+  margin-top:30px;
+}
+
+#service_guide ul:nth-of-type(1){
+  padding:0;
+  display:flex;
+  flex-wrap: wrap;
+  margin-top:5px;
+}
+#service_guide ul:nth-of-type(1) li{
+  width:110px;
+  height: 110px;
+  background-color:#00a968;
+  margin:5px;
+}
+#service_guide ul:nth-of-type(1) div{
+  height:100%;
+  width:100%;
+  position:relative;
+  text-align: center;
+  display: table;
+}
+#service_guide ul:nth-of-type(1) span{
+  display: table-cell;
+  vertical-align: middle;
+  color:white;
+}
+#service_guide ul:nth-of-type(1) li a{
+  display: inline-block;
+  position:absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width:100%;
+}
+#service_guide ul:nth-of-type(2){
+  padding:0;
+}
+#service_guide ul:nth-of-type(2) li{
+  text-align: center;
+}
+
+#service_guide ul:nth-of-type(2) li a{
+  display:block;
+  width:100%;
+  height:100%;
+  padding-top:5px;
+  padding-bottom:5px;
+  margin-top:5px;
+  margin-bottom:5px;
+  background-color:midnightblue;
+  color:white;
+  text-decoration: none;
+}
+#service_guide ul:nth-of-type(3){
+  padding:0;
+}
+#service_guide ul:nth-of-type(3) li{
+  text-align: center;
+}
+
+#service_guide ul:nth-of-type(3) li a{
+  display:block;
+  width:100%;
+  height:100%;
+  padding-top:5px;
+  padding-bottom:5px;
+  margin-top:5px;
+  margin-bottom:5px;
+  background-color:yellowgreen;
+  color:white;
+  text-decoration: none;
+}
+
+#container{
+  overflow: hidden;
+}
+
+footer{
+  margin-top:30px;
+}
+footer div{
+  background-color: lightgray;
+  padding-top:20px;
+  padding-bottom:20px;
+  margin-bottom:30px;
+}
+footer table{
+  table-layout: fixed;
+  width:95%;
+  margin-left:auto;
+  margin-right:auto;
+}
+footer table th{
+  text-align: left;
+}
+footer table td{
+  text-align: left;
+}
+footer table ul{
+  padding:0;
+}
+footer a{
+  text-decoration: none;
+  color:midnightblue;
+}
+footer ul:nth-child(2){
+  padding:0;
+}
+footer ul:nth-child(2) li{
+  display: inline-block;
+  width:19%;
+  text-align: center;
+}
+footer div:last-child{
+  color:white;
+  background-color: midnightblue;
+  padding:0;
+  padding-top:10px;
+  padding-bottom:10px;
+  width:100%;
+  height:100%;
+  text-align: center;
+  margin-right:-200%;
+  margin-left:-200%;
+  padding-right:200%;
+  padding-left:200%;
+}
