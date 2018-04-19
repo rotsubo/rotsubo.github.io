@@ -11,6 +11,13 @@ canvas{
   margin-right: auto;
   margin-left: auto;
 }
+.introduce{
+  margin-top: 40px;
+  display: flex;
+}
+.introduce img{
+  width:5em;
+}
 h2:first-of-type{
   margin-top:150px;
 }
@@ -43,6 +50,9 @@ li{
   h2:nth-child(n+2){
   margin-top:100px;
 }
+  .introduce{
+    margin-top:20px;
+  }
 }
 @media screen and (min-width:600px) and (max-width:960px){
   html{
@@ -54,6 +64,9 @@ li{
   h2:nth-child(n+2){
   margin-top:200px;
 }
+  .introduce{
+    margin-top:30px;
+  }
 }
 @media screen and (max-width:1260px) and (min-width:960px){
   h2:nth-child(n+2){
