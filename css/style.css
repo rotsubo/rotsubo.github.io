@@ -295,7 +295,6 @@ ul{
        opacity: 1;}
 }
 
-
 /*--------------------*/
 /*Work*/
 /*--------------------*/
@@ -403,8 +402,19 @@ footer{
   text-align: center;
   border-top:solid 1px silver;
 }
-/*footer>div:first-child{
-  height:100%;
-  background-color:rgba(255,255,255,0.3);
-  color:whitesmoke;
-}*/
+
+/*--------------------*/
+/*ストリートビュー*/
+/*--------------------*/
+.viewContainer{
+  margin-bottom:100px;
+}
+#map{
+  display: none;
+  width:300px;
+  height:300px;
+}
+.pano{
+  width:300px;
+  height:300px;
+}
